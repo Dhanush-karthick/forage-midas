@@ -16,6 +16,7 @@ public class UserPopulator {
     public void populate() {
         String[] userLines = fileLoader.loadStrings("/test_data/lkjhgfdsa.hjkl");
         for (String userLine : userLines) {
+            System.out.println(userLine);
             String[] userData = userLine.split(", ");
             UserRecord user = new UserRecord(userData[0], Float.parseFloat(userData[1]));
             databaseConduit.save(user);

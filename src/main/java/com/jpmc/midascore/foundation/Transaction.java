@@ -1,7 +1,10 @@
 package com.jpmc.midascore.foundation;
 
+import org.springframework.stereotype.Component;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@Component
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Transaction {
     private long senderId;

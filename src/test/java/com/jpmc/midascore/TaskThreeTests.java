@@ -30,6 +30,8 @@ public class TaskThreeTests {
         for (String transactionLine : transactionLines) {
             kafkaProducer.send(transactionLine);
         }
+
+        
         Thread.sleep(2000);
 
 
